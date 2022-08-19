@@ -1,0 +1,9 @@
+rootProject.name = 'main'
+
+include 'lib'
+
+def commonUstaz = file(properties.get('commonUstaz'))
+
+rootProject.children.findAll { it.name.equals('lib') }.each { project ->
+    project.projectDir = new File(commonUstaz, project.name.replace(':', '/'))
+}
