@@ -1,5 +1,5 @@
 
-#`lib` project
+# `lib` project
 
 1. Create simple spring boot app (name of package for example `com.shared`)
 
@@ -35,7 +35,7 @@ rootProject.name = 'lib'
 7. copy your hibernate classes into your com.shared package
 
 
-#Project Main
+# Project Main
 
 1. in main class add @ComponentScan("com.example") - this is done to make spring scan project
 
